@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "AI Chat TOC",
+  "version": "0.1.0",
+  "description": "Add a navigable table of contents for AI chat pages.",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "AI Chat TOC",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png"
+    }
+  },
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*",
+    "https://chat.qwen.ai/*",
+    "https://tongyi.aliyun.com/*",
+    "https://kimi.moonshot.cn/*",
+    "https://yuanbao.tencent.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://chat.qwen.ai/*",
+        "https://tongyi.aliyun.com/*",
+        "https://kimi.moonshot.cn/*",
+        "https://yuanbao.tencent.com/*"
+      ],
+      "js": [
+        "src/content/adapters/chatgpt.js",
+        "src/content/adapters/claude.js",
+        "src/content/adapters/gemini.js",
+        "src/content/adapters/doubao.js",
+        "src/content/adapters/qwen.js",
+        "src/content/adapters/kimi.js",
+        "src/content/adapters/yuanbao.js",
+        "src/content/storage.js",
+        "src/content/parser.js",
+        "src/content/panel.js",
+        "src/content/main.js"
+      ],
+      "css": ["src/content/style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
