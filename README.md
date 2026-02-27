@@ -1,44 +1,48 @@
 # AI Chat TOC
 
-[中文](./README_zh.md) | English
+中文 | [English](./README_en.md)
 
-![AI Chat TOC Icon](./assets/icons/icon-128.png)
+![AI Chat TOC 图标](./assets/icons/icon-128.png)
 
-A Chrome extension that adds a clean, navigable table of contents for AI chat conversations.
+一个为 AI 对话页面提供目录导航的 Chrome 扩展，帮助你快速定位历史提问。
 
-## Version
+## 版本
 
 - `v0.1.0`
 
-## Supported Sites
+## 当前支持站点
 
 - ChatGPT
 - Claude
 - Gemini
 
-## Highlights
+## 功能亮点
 
-- Build a TOC from user prompts automatically
-- Smooth scroll to a selected prompt with target highlight
-- Star important prompts and persist bookmarks per conversation URL
-- Keep current prompt in sync with viewport while scrolling
-- Compact collapsible sidebar with minimal visual noise
+- 自动提取用户提问并生成目录
+- 点击目录项后平滑滚动到目标消息并高亮
+- 支持星标收藏，按会话 URL 隔离存储
+- 滚动时自动同步当前活跃问题
+- 侧边栏可折叠，界面简洁
 
-## Install (Developer Mode)
+## 演示
 
-1. Open `chrome://extensions`
-2. Enable **Developer mode**
-3. Click **Load unpacked**
-4. Select this folder: `/Users/sun/Code/ai-chat-toc-extension`
+![AI Chat TOC Demo](./demo.png)
 
-## Project Structure
+## 安装（开发者模式）
 
-- `manifest.json`: extension manifest (MV3)
-- `src/content/`: parser, panel UI, style, storage, site adapters
-- `src/background/`: service worker
-- `assets/icons/`: extension icons
-- `test/manual-checklist.md`: manual verification checklist
+1. 打开 `chrome://extensions`
+2. 启用“开发者模式”
+3. 点击“加载已解压的扩展程序”
+4. 选择项目目录：`/Users/sun/Code/ai-chat-toc-extension`
 
-## Release Notes
+## 项目结构
 
-`v0.1.0` is the first public release with core TOC navigation and bookmark support.
+- `manifest.json`：扩展清单（MV3）
+- `src/content/`：解析、面板、样式、存储、站点适配器
+- `src/background/`：后台 service worker
+- `assets/icons/`：扩展图标
+- `test/manual-checklist.md`：手动验证清单
+
+## 发布说明
+
+`v0.1.0` 为首个公开版本，包含核心目录导航与星标能力。

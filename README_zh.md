@@ -1,6 +1,6 @@
 # AI Chat TOC
 
-中文 | [English](./README.md)
+中文 | [English](./README_en.md)
 
 ![AI Chat TOC 图标](./assets/icons/icon-128.png)
 
