@@ -33,10 +33,10 @@ A Chrome extension that adds a clean, navigable table of contents for AI chat co
 
 ## Install (Developer Mode)
 
-1. Open `chrome://extensions`
-2. Enable **Developer mode**
-3. Click **Load unpacked**
-4. Select this folder: `/Users/sun/Code/ai-chat-toc-extension`
+1. Download the latest package from [Releases](https://github.com/sunyifeng11111/ai-chat-toc-extension/releases)
+2. Open `chrome://extensions`
+3. Enable **Developer mode**
+4. Click **Load unpacked** and choose the extracted folder
 
 ## Project Structure
 

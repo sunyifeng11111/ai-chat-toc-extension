@@ -33,10 +33,10 @@
 
 ## 安装（开发者模式）
 
-1. 打开 `chrome://extensions`
-2. 启用“开发者模式”
-3. 点击“加载已解压的扩展程序”
-4. 选择项目目录：`/Users/sun/Code/ai-chat-toc-extension`
+1. 从 [Releases](https://github.com/sunyifeng11111/ai-chat-toc-extension/releases) 下载最新压缩包
+2. 打开 `chrome://extensions`
+3. 启用“开发者模式”
+4. 点击“加载已解压的扩展程序”，选择解压后的目录
 
 ## 项目结构
 
