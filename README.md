@@ -3,12 +3,15 @@
 中文 | [English](./README_en.md)
 
 ![AI Chat TOC 图标](./assets/icons/icon-128.png)
+![Chrome](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white)
+![Manifest](https://img.shields.io/badge/Manifest-V3-34A853)
+![Version](https://img.shields.io/badge/Version-v0.1.1-2563eb)
 
 一个为 AI 对话页面提供目录导航的 Chrome 扩展，帮助你快速定位历史提问。
 
 ## 版本
 
-- `v0.1.0`
+- `v0.1.1`
 
 ## 当前支持站点
 
@@ -45,4 +48,4 @@
 
 ## 发布说明
 
-`v0.1.0` 为首个公开版本，包含核心目录导航与星标能力。
+`v0.1.1` 修复了 ChatGPT 场景下星标点击无响应的问题，并优化了文档展示。

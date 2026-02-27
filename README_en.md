@@ -3,12 +3,15 @@
 [中文](./README.md) | English
 
 ![AI Chat TOC Icon](./assets/icons/icon-128.png)
+![Chrome](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white)
+![Manifest](https://img.shields.io/badge/Manifest-V3-34A853)
+![Version](https://img.shields.io/badge/Version-v0.1.1-2563eb)
 
 A Chrome extension that adds a clean, navigable table of contents for AI chat conversations.
 
 ## Version
 
-- `v0.1.0`
+- `v0.1.1`
 
 ## Supported Sites
 
@@ -45,4 +48,4 @@ A Chrome extension that adds a clean, navigable table of contents for AI chat co
 
 ## Release Notes
 
-`v0.1.0` is the first public release with core TOC navigation and bookmark support.
+`v0.1.1` fixes ChatGPT star-click responsiveness and improves README presentation.
